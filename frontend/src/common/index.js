@@ -1,4 +1,4 @@
-const backendDomin = "https://shopify-zone-backend.vercel.app/"
+const backendDomin = "https://shopify-zone-backend-3fmpyvkeo-sumedh-barsagades.vercel.app/"
 
 const SummaryApi = {
     signUP : {
