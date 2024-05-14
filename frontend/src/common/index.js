@@ -1,4 +1,4 @@
-const backendDomin = "http://localhost:8080"
+const backendDomin = "https://shopify-zone-backend.vercel.app"
 
 const SummaryApi = {
     signUP : {
