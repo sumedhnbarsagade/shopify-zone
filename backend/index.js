@@ -9,7 +9,7 @@ const router = require('./routes')
 const app = express()
 
 app.use(cors({
-    origin: "https://shopify-zone-frontend.vercel.app/",
+    origin: "http://localhost:3000/",
     credentials : true
 }))
 
