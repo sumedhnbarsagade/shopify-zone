@@ -1,13 +1,11 @@
 const addToCartModel = require("../../models/cartProduct");
 
-const deleteAddToCartProduct = async (req, res) => {
+const deleteAllProducts = async (req, res) => {
   try {
     const currentUserId = req.userId;
     const addToCartProductId = req.body._id;
 
-    const deleteProduct = await addToCartModel.deleteOne({
-      _id: addToCartProductId,
-    });
+    const deleteProduct = await addToCartModel.deleteMany();
 
     res.json({
       message: "Product Deleted From Cart",
@@ -24,4 +22,4 @@ const deleteAddToCartProduct = async (req, res) => {
   }
 };
 
-module.exports = deleteAddToCartProduct;
+module.exports = deleteAllProducts;
